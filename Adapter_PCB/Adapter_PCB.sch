@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5C5D86D7
+P 3600 3350
+F 0 "J1" H 3520 2625 50  0000 C CNN
+F 1 "Conn_01x10" H 3520 2716 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 3600 3350 50  0001 C CNN
+F 3 "~" H 3600 3350 50  0001 C CNN
+	1    3600 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5C5D886D
+P 5000 3450
+F 0 "J3" H 5000 3900 50  0000 L CNN
+F 1 "Conn_01x06" H 4800 3800 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Horizontal" H 5000 3450 50  0001 C CNN
+F 3 "~" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 3500 3800 2    63   ~ 0
+5V\n5V\n3.3V\n3.3V\nGND\nGND\nSWDIO\nSWIM\nSWCLK\nRST
+Text Notes 5050 3800 0    63   ~ 0
+SWDIO\nSWCLK\nRST\n5V\n3.3V\nGND
+Wire Wire Line
+	3800 3650 4450 3650
+Wire Wire Line
+	4450 3650 4450 3350
+Wire Wire Line
+	4450 3350 4800 3350
+Wire Wire Line
+	4800 3650 4550 3650
+Wire Wire Line
+	4550 3650 4550 3150
+Wire Wire Line
+	4550 3150 3800 3150
+Wire Wire Line
+	3800 3050 3800 3150
+Connection ~ 3800 3150
+Wire Wire Line
+	4800 3250 4050 3250
+Wire Wire Line
+	4050 3250 4050 3450
+Wire Wire Line
+	4050 3450 3800 3450
+Wire Wire Line
+	4800 3550 4150 3550
+Wire Wire Line
+	4150 3550 4150 2950
+Wire Wire Line
+	4150 2950 3800 2950
+Wire Wire Line
+	3800 2850 3800 2950
+Connection ~ 3800 2950
+Wire Wire Line
+	4800 3450 4250 3450
+Wire Wire Line
+	4250 3450 4250 3750
+Wire Wire Line
+	4250 3750 3800 3750
+NoConn ~ 3800 3550
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5C5D9816
+P 3750 4500
+F 0 "J2" H 3805 4967 50  0000 C CNN
+F 1 "USB_B_Micro" H 3805 4876 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 3900 4450 50  0001 C CNN
+F 3 "~" H 3900 4450 50  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 4600
+NoConn ~ 4050 4700
+NoConn ~ 4050 4500
+Wire Wire Line
+	4150 3550 4150 4300
+Wire Wire Line
+	4150 4300 4050 4300
+Connection ~ 4150 3550
+Wire Wire Line
+	3800 3250 3900 3250
+Wire Wire Line
+	3900 3250 3900 3350
+Wire Wire Line
+	3800 3350 3900 3350
+Connection ~ 3900 3350
+Wire Wire Line
+	3900 3350 3900 3850
+Wire Wire Line
+	4800 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 3850
+$Comp
+L power:GND #PWR0101
+U 1 1 5C5DADF3
+P 4700 3850
+F 0 "#PWR0101" H 4700 3600 50  0001 C CNN
+F 1 "GND" H 4705 3677 50  0000 C CNN
+F 2 "" H 4700 3850 50  0001 C CNN
+F 3 "" H 4700 3850 50  0001 C CNN
+	1    4700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C5DAE0B
+P 3900 3850
+F 0 "#PWR0102" H 3900 3600 50  0001 C CNN
+F 1 "GND" H 3905 3677 50  0000 C CNN
+F 2 "" H 3900 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C5DAE3A
+P 3750 5000
+F 0 "#PWR0103" H 3750 4750 50  0001 C CNN
+F 1 "GND" H 3755 4827 50  0000 C CNN
+F 2 "" H 3750 5000 50  0001 C CNN
+F 3 "" H 3750 5000 50  0001 C CNN
+	1    3750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4900 3650 4950
+Wire Wire Line
+	3650 4950 3750 4950
+Wire Wire Line
+	3750 4950 3750 4900
+Wire Wire Line
+	3750 4950 3750 5000
+Connection ~ 3750 4950
+$EndSCHEMATC
